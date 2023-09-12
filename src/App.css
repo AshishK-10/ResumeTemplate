@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+.navbars{
+  display: flex;
+  justify-content: row;
+  margin-left: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLogo{
+  width:20%;
+  display: flex;
+  /* justify-content: center; */
+  padding-right: 5%;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LogoSpan > img{
+  margin-left: 15%;
+  width:100px;
+  height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbarsIcons{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  align-self: center;
+  gap: 2%;
+  margin-right: 2%;
+}
+
+.navbarsIconsImages{
+  cursor: pointer;
+}
+
+.mainDiv{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.sidebars{
+  height: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+
+.sidenavs{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidenavs > span{
+  cursor: pointer;
+  padding: 2%;
+}
+
+.selected{
+  background-color: rgba(225, 251, 252);
+  font-weight: bold;
+  color: blue;
+}
+
+.unselected{
+  opacity: 0.5;
+  color: lightblue;
+}
+.communitiesFeedMainDiv{
+  height: 100%;
+  margin-top: 10%;
+}
+
+.communitiesFeedDiv{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding-top: 15%;
+}
+
+.communitiesFeedInsideIcon{
+  font-size: 25px;
+  width: 15%;
+  margin-right: 2%;
+  border-radius: 30%;
+
+}
+
+.communitiesFeedNameDiv{
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.sideFooter{
+  height: 100%;
+  margin-top: 30%;
+}
+
+.sideFooterContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.sideFooterKeys{
+  font-size: small;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sideFooterCopyright{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: smaller;
+  gap: 5px;
+  font-family: sans-serif;
+  padding-top: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.mainBox{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:80%;
+  margin-left: 2px;
+  margin-top: -8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CoverPage{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.CoverPage > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileDiv{
+  position: absolute;
+  background-color: grey; /* Set the background color of the overlapping div */
+  z-index: 1;
+  top: 100px;
+  left: 318px;
+  border: 3px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilePicContainer{
+  width: 100px;
+  height: 100px;
+}
+
+.profilePicContainer > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.mainProfileDiv{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.profilePicCardContainer{
+  width: 35%;
+  margin-bottom: 4%;
+  margin-left: 1%;
+}
+.PofilePicCard{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.profileDesignation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileDesignation > span{
+  align-self: center;
+}
+
+.innerProfileCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: medium;
+  margin-top: 5%;
+}
+
+.thumbnails{
+  margin-top: 1%;
+  font-size:xx-small;
+  color: grey;
+}
+
+.profileLinksIconsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 10%;
+  margin-bottom: 12%;
+}
+
+.profileLinksIconsContainer > span{
+  cursor: pointer;
+}
+
+.loadingWheelContainer{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 12%;
+}
+
+.loadingWheelContainer > span{
+  align-self: center;
+  margin-bottom: 2%;
+  color: blue;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.loadingWheelContainer > img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ProfilesliderContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.profileRankingFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1px;
+}
+
+
+
+
+
+.headlineMainDiv{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
+ margin-left: 3%;
+}
+
+.headlineInnerDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin-left: -5%; */
+}
+
+
+.outerContainerDiv{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.experieceContainerDiv{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  height: 100%;
+  width: 100%;
+  gap: 2%;
+}
+
+.ExpeienceFeedNameDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.ExperienceFeedInsideIcon{
+  height: 40px;
+  width: 40x;
+  border-radius: 20px;
+  font-size: medium;
+  background-color: lightblue;
+  color: blue;
+}
+
+.headlineReading{
+  margin-left: 2%;
+}
+
+.navbarProfile{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navbarProfile > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
