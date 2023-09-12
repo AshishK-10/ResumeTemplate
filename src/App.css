@@ -333,3 +333,15 @@
   width: 100%;
   object-fit: cover;
 }
+
+.expButton{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  width: 20%;
+  justify-content: flex-end;
+  gap: 5%;
+  color: blue;
+  cursor: pointer;
+}
+

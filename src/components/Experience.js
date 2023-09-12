@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faGraduationCap} from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faGraduationCap, faCirclePlus, faSquarePen} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Experience({name, company, desc, date, id}) {
@@ -13,6 +13,10 @@ export default function Experience({name, company, desc, date, id}) {
           <span style = {{fontFamily: "sans-serif", fontWeight: "bold", fontSize: "Medium"}}>{name}</span>
           <span style = {{fontFamily: "sans-serif", fontWeight: "bold", color: "grey"}}>{date}</span>
           <span style = {{fontFamily: "sans-serif", color: "grey"}}>{company}</span>
+        </div>
+        <div className='expButton'>
+          <span><FontAwesomeIcon icon = {faCirclePlus} /></span>
+          <span><FontAwesomeIcon icon = {faSquarePen} /></span>
         </div>
       </div>
       {desc && <span style = {{fontFamily: "sans-serif", color: "black", marginLeft: "7%", marginTop: "2%"}}>{desc}</span>}
